@@ -11,7 +11,7 @@ export class TodosComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  // Add new Todo to layout handler
   addNewTodoHandler(value) {
     if (value.length) {
       this.todos.push(value);

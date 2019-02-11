@@ -13,6 +13,7 @@ export class AddNewTodoFormComponent implements OnInit {
 
   ngOnInit() {
   }
+  // Form submit handler
   onSubmitHandler(form) {
     this.addNewTodo.emit(this.newTodo);
     form.resetForm();
