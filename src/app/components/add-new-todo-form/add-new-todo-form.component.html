@@ -1,0 +1,7 @@
+<form (ngSubmit)="onSubmitHandler(addTodoForm)" #addTodoForm="ngForm" novalidate>
+    <input type="text" [(ngModel)]="newTodo" name="todo" #todo="ngModel" required>
+    <button type="submit" [disabled]="addTodoForm.invalid">Add new Todo Task</button>
+    <div *ngIf="addTodoForm.touched && addTodoForm.invalid || addTodoForm.untouched">
+        Value is required
+    </div>
+</form>
